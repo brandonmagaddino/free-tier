@@ -97,6 +97,14 @@ it never makes a network call to any server we control.
 
 See [SECURITY.md](SECURITY.md) for the full disclosure policy and contact.
 
+## Disclaimer
+
+This plugin gives architectural guidance based on publicly available pricing information,
+which can be outdated, incomplete, or wrong. It does not guarantee that any recommended
+design will stay within a free tier, and you are solely responsible for monitoring your
+own cloud spend and verifying pricing before deploying. See [LICENSE](LICENSE) — provided
+"as is," with no warranty and no liability for damages, including unexpected charges.
+
 ## Roadmap
 
 - Additional cloud reference files: AWS, GCP, Vercel + Supabase (see below — this is the
