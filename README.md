@@ -1,6 +1,7 @@
 <div align="center">
 
-<img src="assets/header.svg" alt="free-tier: it doesn't need much to survive" />
+<img src="assets/header.svg#gh-light-mode-only" alt="free-tier: it doesn't need much to survive" />
+<img src="assets/header-dark.svg#gh-dark-mode-only" alt="free-tier: it doesn't need much to survive" />
 
 [![Validate plugin](https://github.com/brandonmagaddino/free-tier/actions/workflows/validate.yml/badge.svg)](.github/workflows/validate.yml)
 [![License](https://img.shields.io/github/license/brandonmagaddino/free-tier)](LICENSE.md)
