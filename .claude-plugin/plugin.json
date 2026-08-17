@@ -1,0 +1,19 @@
+{
+  "name": "free-tier",
+  "version": "0.1.0",
+  "description": "Architects new apps to survive on cloud free tiers. Steers Azure architecture decisions toward free-tier-eligible services and flags the moment a choice would require paying.",
+  "author": {
+    "name": "Brandon Magaddino"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/brandonmagaddino/free-tier",
+  "keywords": [
+    "azure",
+    "serverless",
+    "free-tier",
+    "cost",
+    "architecture",
+    "cosmos-db",
+    "static-web-apps"
+  ]
+}
