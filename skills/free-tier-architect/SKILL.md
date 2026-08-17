@@ -41,6 +41,11 @@ whenever the conversation gets specific about services or numbers. Stubs exist a
 platforms; if the user is targeting one of those, say plainly that this skill's coverage
 there is thin today and give best-effort guidance rather than pretending to depth Azure has.
 
+For jobs where the cloud itself has no good free-tier answer (e.g., transactional email —
+Azure Communication Services Email bills from message one), check
+`references/third-party.md` for a point-solution honorable mention before defaulting to
+"that's paid" — a cloud-native gap doesn't always mean the whole job is paid.
+
 ## Step 1: Verify before quoting numbers
 
 Free tier limits and pricing change over time, and being wrong here is worse than being

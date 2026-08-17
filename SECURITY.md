@@ -38,3 +38,12 @@ described above — or a way its guidance itself could lead to a genuine securit
 
 For anything you'd rather not post publicly, email **brandonmagaddino@gmail.com**. We'll
 acknowledge reports within a few business days.
+
+## Disclaimer
+
+This plugin gives architectural guidance based on publicly available pricing information,
+which can be outdated, incomplete, or wrong. It does not guarantee that any recommended
+design will stay within a free tier, and you are solely responsible for monitoring your
+own cloud spend and verifying pricing before deploying. See [LICENSE](LICENSE) —
+provided "as is," with no warranty and no liability for damages, including unexpected
+charges.

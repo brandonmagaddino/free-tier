@@ -69,6 +69,11 @@ Flag these immediately if they come up — they are the fastest way out of a fre
 - **Azure Service Bus** — Basic tier is low-cost but not free; only trial credit covers it temporarily.
 - **App Service Plan** at Basic tier or above (needed once SWA's feature set is outgrown — VNET integration, always-on, larger compute) — paid from the first hour.
 - **Durable Functions orchestration storage** — the orchestration logic runs under the normal Functions free grant, but the Storage Account backing orchestration state (queues, tables, blobs used for checkpointing) is billed separately, same as the base Storage Account gotcha above, just larger in practice because Durable Functions writes to it continuously.
+- **Azure Communication Services — Email** — pay-as-you-go from the first message, no free
+  grant at all: $0.00025/email sent + $0.00012/MB transferred. Cheap at low volume (~$1/mo
+  for 100 emails/day) but not free. If the user just needs transactional email (signup
+  confirmations, password resets) and free is the priority, point at Mailgun's free tier
+  in `references/third-party.md` instead.
 
 For each of these, when they come up: name the service, name what specifically triggers billing, and give a rough number — don't just say "that costs money."
 
