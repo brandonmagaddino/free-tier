@@ -3,7 +3,7 @@
 <img src="assets/header.svg" alt="free-tier: it doesn't need much to survive" />
 
 [![Validate plugin](https://github.com/brandonmagaddino/free-tier/actions/workflows/validate.yml/badge.svg)](.github/workflows/validate.yml)
-[![License](https://img.shields.io/github/license/brandonmagaddino/free-tier)](LICENSE)
+[![License](https://img.shields.io/github/license/brandonmagaddino/free-tier)](LICENSE.md)
 [![Works with Claude Code](https://img.shields.io/badge/works%20with-Claude%20Code-5B8C55)](https://claude.com/claude-code)
 [![Latest release](https://img.shields.io/github/v/release/brandonmagaddino/free-tier)](https://github.com/brandonmagaddino/free-tier/releases)
 
@@ -102,8 +102,8 @@ See [SECURITY.md](SECURITY.md) for the full disclosure policy and contact.
 This plugin gives architectural guidance based on publicly available pricing information,
 which can be outdated, incomplete, or wrong. It does not guarantee that any recommended
 design will stay within a free tier, and you are solely responsible for monitoring your
-own cloud spend and verifying pricing before deploying. See [LICENSE](LICENSE) — provided
-"as is," with no warranty and no liability for damages, including unexpected charges.
+own cloud spend and verifying pricing before deploying. See [LICENSE.md](LICENSE.md) —
+provided "as is," with no warranty and no liability for damages, including unexpected charges.
 
 ## Roadmap
 
@@ -130,4 +130,4 @@ it as a stub, and remove the "not yet covered" notice from the reference file it
 
 ## License
 
-[MIT](LICENSE)
+[MIT](LICENSE.md)
