@@ -1,0 +1,22 @@
+{
+  "name": "free-tier",
+  "owner": {
+    "name": "Brandon Magaddino"
+  },
+  "plugins": [
+    {
+      "name": "free-tier",
+      "source": "./",
+      "description": "Architects new apps to survive on cloud free tiers. Steers Azure architecture decisions toward free-tier-eligible services and flags the moment a choice would require paying.",
+      "version": "0.1.0",
+      "license": "MIT",
+      "keywords": [
+        "azure",
+        "serverless",
+        "free-tier",
+        "cost",
+        "architecture"
+      ]
+    }
+  ]
+}
