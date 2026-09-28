@@ -1,0 +1,19 @@
+{
+  "name": "free-tier",
+  "interface": {
+    "displayName": "free-tier"
+  },
+  "plugins": [
+    {
+      "name": "free-tier",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}

@@ -1,5 +1,7 @@
 ---
-description: Audit an architecture (described in chat, or the current repo) against Azure free-tier limits — what's free, what's paid and why, and a low-cost fix for anything paid.
+name: free-tier-audit
+description: Audit an architecture (described in chat, or the current repo) against Azure free-tier limits — what's free, what's paid and why, and a low-cost fix for anything paid. Run only when the user explicitly asks for a free-tier audit.
+disable-model-invocation: true
 ---
 
 # Free Tier Audit
@@ -30,7 +32,7 @@ plainly. This command produces a point-in-time report; it doesn't change anythin
 ## Verification
 
 Before quoting specific limits or dollar amounts, follow the same verification rule as the
-skill: check `references/azure.md`'s "Last verified" date, and web search Microsoft
+`free-tier-architect` skill: check `../free-tier-architect/references/azure.md`'s "Last verified" date, and web search Microsoft
 Learn / Azure pricing pages to confirm current figures if that date is stale or the
 finding is going into something consequential (a client-facing report, a go/no-go
 decision). Say which you did.
@@ -58,5 +60,5 @@ This command reports and recommends; it does not generate Bicep/Terraform, edit 
 deploy anything. If the user wants the fix actually implemented, that's a separate,
 explicit ask.
 
-For the underlying limits data, read `../skills/free-tier-architect/references/azure.md` —
+For the underlying limits data, read `../free-tier-architect/references/azure.md` —
 don't duplicate its numbers here; this command's job is applying that data, not restating it.
