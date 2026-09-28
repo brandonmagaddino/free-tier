@@ -1,29 +1,31 @@
 # Security Policy
 
-`free-tier` is a Claude Code plugin made up of markdown skill/command instructions and
-one slash command. It is not a service, has no backend, and ships no executable code
-beyond what Claude Code itself already runs (the markdown files are prompts, not scripts).
+`free-tier` is a plugin for Claude Code, Cursor, and Codex made up of two markdown skills
+and their manifests. It is not a service, has no backend, and ships no executable code
+(the markdown files are prompts, not scripts). Everything below applies identically in
+all three tools.
 
 ## What this plugin can access
 
-- **The current conversation** — same read access any Claude Code skill has to what
+- **The current conversation** — same read access any skill in your agent has to what
   you've typed and what's in context.
-- **Local files, but read-only, and only when you run `/free-tier-audit` inside a repo** —
+- **Local files, but read-only, and only when you run the `free-tier-audit` skill inside a repo** —
   it looks at config/manifest/IaC files that hint at deployed Azure resources
   (`staticwebapp.config.json`, `host.json`, `*.bicep`/`*.tf`, `appsettings*.json` /
   `.env*` **key names only, never values**, CI workflow files). This is the same file
-  access any Claude Code session already has in your working directory — the plugin
+  access your agent session already has in your working directory — the plugin
   doesn't expand it.
-- **The public internet, via Claude's normal web search** — used to verify current Azure
-  pricing/limits against Microsoft Learn and official Azure pricing pages before quoting
-  specific numbers in a cost-sensitive conversation. This goes through Claude Code's
-  existing web search capability, not a network call this plugin makes on its own.
+- **The public internet, via your agent's built-in web search** — used to verify current
+  Azure pricing/limits against Microsoft Learn and official Azure pricing pages before
+  quoting specific numbers in a cost-sensitive conversation. This goes through the host
+  tool's existing web search capability (if enabled), not a network call this plugin
+  makes on its own.
 
 ## What this plugin never does
 
 - **No telemetry, no phone-home.** Nothing in this plugin sends data anywhere. There is
   no analytics endpoint, no update-check ping, no server we control that it talks to.
-- **No writes.** It never creates, edits, or deletes a file. `/free-tier-audit` produces
+- **No writes.** It never creates, edits, or deletes a file. `free-tier-audit` produces
   a report in the conversation; it does not modify your repo.
 - **No deployments.** It never runs `az`, `terraform`, `bicep`, or any deployment tooling.
 - **No credentials.** It never reads secret values, never asks for one, and has no

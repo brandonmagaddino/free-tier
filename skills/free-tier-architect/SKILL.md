@@ -20,8 +20,9 @@ cloud free-tier limits — and tell them the moment a decision would step outsid
 before they've built on top of it.
 
 This is an advisory skill. It steers conversation and decisions; it does not scaffold
-repos or generate IaC (Bicep/Terraform) in this version. See `/free-tier-audit` for a
-point-in-time audit of an architecture already in progress.
+repos or generate IaC (Bicep/Terraform) in this version. For a point-in-time audit of an
+architecture already in progress, point the user at the companion `free-tier-audit` skill
+(invoked as `/free-tier-audit` in Claude Code and Cursor, `$free-tier-audit` in Codex).
 
 ## Who this is for
 
@@ -61,8 +62,8 @@ dollar amount) in a conversation where the user is making a real decision:
    last verified <date> — worth double-checking if this is going into a client proposal."
 
 Never present a stale baked-in number as if it were just confirmed. When a live search
-isn't practical (offline, low-stakes exploratory chat), say you're working from the
-baked-in figures and give the verified-as-of date.
+isn't practical (offline, web search not enabled in this tool, low-stakes exploratory
+chat), say you're working from the baked-in figures and give the verified-as-of date.
 
 ## Step 2: Walk the decision framework
 
