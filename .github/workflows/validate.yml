@@ -17,3 +17,19 @@ jobs:
 
       - name: Validate plugin manifest
         run: claude plugin validate ./
+
+      - name: Check all manifests parse and share one version
+        run: |
+          set -e
+          VERSIONS=$(
+            jq -r '.version' plugin.json .claude-plugin/plugin.json .cursor-plugin/plugin.json
+            jq -r '.plugins[] | select(.name == "free-tier") | .version' .claude-plugin/marketplace.json
+          )
+          jq -e . .agents/plugins/marketplace.json > /dev/null
+          echo "$VERSIONS"
+          if [ "$(echo "$VERSIONS" | sort -u | wc -l)" -ne 1 ]; then
+            echo "::error::Manifest versions differ"; exit 1
+          fi
+
+      - name: Validate portable (Codex) manifest against Agent Plugins schema
+        run: pipx run check-jsonschema --schemafile https://agent-plugins.org/schemas/1.0.0/plugin.schema.json plugin.json

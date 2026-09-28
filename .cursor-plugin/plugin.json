@@ -5,8 +5,10 @@
   "author": {
     "name": "Brandon Magaddino"
   },
-  "license": "MIT",
+  "homepage": "https://github.com/brandonmagaddino/free-tier",
   "repository": "https://github.com/brandonmagaddino/free-tier",
+  "license": "MIT",
+  "logo": "assets/logo.svg",
   "keywords": [
     "azure",
     "serverless",

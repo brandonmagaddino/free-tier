@@ -1,12 +1,14 @@
 {
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "free-tier",
   "version": "0.2.0",
   "description": "Architects new apps to survive on cloud free tiers. Steers Azure architecture decisions toward free-tier-eligible services and flags the moment a choice would require paying.",
   "author": {
     "name": "Brandon Magaddino"
   },
-  "license": "MIT",
+  "homepage": "https://github.com/brandonmagaddino/free-tier",
   "repository": "https://github.com/brandonmagaddino/free-tier",
+  "license": "MIT",
   "keywords": [
     "azure",
     "serverless",
